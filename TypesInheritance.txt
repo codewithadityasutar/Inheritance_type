@@ -1,0 +1,64 @@
+"""In this program Types of inheritance 
+   1)Single level 2)Multilevel 3)Multiple 4)Hirerchical
+   Single inheritance upload special """
+#2) Multilevel Inheritance
+# Base class inherit in one or more derived classes
+class base:
+    def show(self):
+        print("This is bace class ")
+class derived1(base):
+    def dshow(self):
+        print("This is derived 1 class")  
+class derived2(derived1):
+    def d2show(self):
+        print("This is derieved 2 class")
+
+d2=derived2()
+d2.show()
+d2.dshow()
+d2.d2show()
+
+print("............................................")
+#3)Multiple Inheritance
+"""Multiple Inheritance in two or more 
+   base class inherit in single class"""
+class Father:
+    def fshow(self):
+        print("This is father class")
+class Mother:
+    def mshow(self):
+        print("This mother class")
+# Two base class inherit in child class
+class child(Father,Mother):
+    def cshow(self):
+        print("This is child class")
+c=child()
+c.fshow()
+c.mshow()
+c.cshow()
+
+print("..............................................")
+#4)Hirarchical Inheritance
+#in this method base class same inherit other classes
+class base:
+    def show(self):
+        print("This base class in Hirarchical")
+
+class derived1(base):
+    def d1show(self):
+        print("This is Derived 1 class in Hirarchical") 
+
+class derived2(base):
+    def d2show(self):
+        print("This is Derived 2 class in Hirarchical")
+# saparate create objects this method
+d1=derived1()
+d1.show()
+d1.d1show()
+
+d2=derived2()
+d2.show()
+d2.d2show()
+
+
+
